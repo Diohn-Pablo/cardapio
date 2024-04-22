@@ -1,0 +1,43 @@
+#O App começa em uma tela inicial com uma área de busca e uma lista com quatro sugestões de pratos
+    *Dentro da coleção terá uma lista de pratos sugeridos que serão exibidos na tela inicial
+
+#Na busca digitada pelo usuário na área do input, terá que ter mais de dois caracteres caso contrário as sugestões continuam sendo exibidas
+    *A busca deve ser feita pelos campos nome, descrição e categoria e parcial não necessitando digitar o nome completo
+    *Quando a busca for realizada será exibido no lugar dos pratos sugeridos
+    *Ao apagar o texto os pratos sugeridos voltam a ser exibidos
+
+#O usuário também deve poder visualizar os pratos por categoria através da navegação em abas
+
+# Cada prato deve ter um nome, uma descrição, uma categoria e uma imagem. Além disso, deve haver uma marcação para saber se o prato é ou não sugerido (tela inicial),
+    * import urumaki from '../assets/imagens/uramaki.png';
+
+        {
+            nome:"Uramaki (salmão)" ,
+            descricao: "Contém Arroz, alga, salmão, cream cheese e cebolinha",
+            categoria: "Roll",
+            pratoSugerido: false,
+            imagem: urumaki
+        }
+
+
+##Especificações de Layout
+
+#A tela possui um espaçamento interno horizontal de 20
+
+#A logo tera uma largura de 92, e altura de 80
+
+#O campo de busca tera uma largura de 100% do espaço disponível e altura de 50 além de bordas arredondadas
+
+#Titulo tera o tamanho de 26 e cor branca
+
+#Os cards que exibem os pratos serão separados em um componente
+
+#Card tem uma largura de 100% e altura de 100
+
+#Imagem do prato possui largura e altura de 96 e borda branca de 4, totalizando 100x100
+
+#A área que envolve o texto do card não possui largura definida, ocupa o espaço disponível
+
+#O título possio fonte de tamanho 16 em negrito e a descrição fonte normal
+
+#A tela de categorias repete o mesmo layout porém sem imagem da logo
